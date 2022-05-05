@@ -4,18 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home"
-    android:background="#242734">
-
-<!--    <ImageView-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:background="@drawable/telabasehome"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.862"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    android:background="#242734"
+    tools:context=".home">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -27,34 +17,379 @@
         app:layout_constraintStart_toStartOf="@+id/guidelinev1"
         app:layout_constraintTop_toTopOf="@+id/guidelineh1" />
 
-    <TextView
+
+    <EditText
+        android:id="@+id/peso"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#424657"
+        android:background="@drawable/arredondar"
+        android:drawableRight="@drawable/search"
+        android:hint="Search..."
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
         app:layout_constraintBottom_toTopOf="@+id/guidelineh2"
         app:layout_constraintEnd_toStartOf="@+id/guidelinev4"
         app:layout_constraintStart_toStartOf="@+id/guidelinev3"
         app:layout_constraintTop_toTopOf="@+id/guidelineh1" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/turretroadmedium"
+        android:text="New and trending"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalTrending"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh3" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalTrending"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineh6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineh3">
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev4"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh4">
 
-    </LinearLayout>
 
-    <LinearLayout
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/arredondar"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:src="@drawable/ic_launcher_background">
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/thewitcher400" />
+
+                <TextView
+                    android:id="@+id/textVi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/turretroadmedium"
+                    android:text="The Witcher"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="70dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/android" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/nintendo" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/windows" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FFAF29"
+                        android:text="Watch" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/arredondar"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:src="@drawable/ic_launcher_background">
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/thewitcher400" />
+
+                <TextView
+                    android:id="@+id/textV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/turretroadmedium"
+                    android:text="The Witcher"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="70dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/android" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/nintendo" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/windows" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FFAF29"
+                        android:text="Watch" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/arredondar"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:src="@drawable/ic_launcher_background">
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/thewitcher400" />
+
+                <TextView
+                    android:id="@+id/textVi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/turretroadmedium"
+                    android:text="The Witcher"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="70dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/android" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/nintendo" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/windows" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FFAF29"
+                        android:text="Watch" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/turretroadmedium"
+        android:text="Best of the year"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineh8"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh7" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalBest"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineh10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineh7">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev4"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh8">
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="190dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/arredondarimagem"
+                        android:src="@drawable/thewither" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/turretroadbold"
+                    android:text="The Witcher"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="190dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/arredondarimagem"
+                        android:src="@drawable/godofwar" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/turretroadbold"
+                    android:text="God of War: Ragnarock"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="190dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/arredondarimagem"
+                        android:src="@drawable/portal2" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/turretroadbold"
+                    android:text="Portal 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineh1"
@@ -69,6 +404,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".11" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineh3"
         android:layout_width="wrap_content"
@@ -77,17 +413,33 @@
         app:layout_constraintGuide_percent=".17" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".21" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineh6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".62" />
+        app:layout_constraintGuide_begin="454dp" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineh7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".73" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineh10"
         android:layout_width="wrap_content"
@@ -101,18 +453,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".05" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinev2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".165" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinev3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".24" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinev4"
         android:layout_width="wrap_content"
