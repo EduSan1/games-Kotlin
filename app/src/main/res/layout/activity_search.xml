@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchActivity"
+    android:background="#242734">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/perfil"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineh2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev2"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh1" />
+
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/arredondar"
+        android:drawableRight="@drawable/search"
+        android:hint="Search..."
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineh2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev4"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev3"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh1" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineh10"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev4"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh4">
+
+        <LinearLayout
+            android:layout_width="367dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:id="@+id/selecionar"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="155dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arredondarimagem"
+                            android:src="@drawable/portal2" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/turretroadbold"
+                        android:text="Portal 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".045" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".165" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".94" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
